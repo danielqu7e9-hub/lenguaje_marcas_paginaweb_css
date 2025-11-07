@@ -1,8 +1,12 @@
-/*  */
+/* Configuració página sencera */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+*::-webkit-scrollbar {
+  scrollbar-width: thin;
 }
 body{
     background-color: #161616;
@@ -47,6 +51,7 @@ h1 a{
     color: #ffffff;
     text-align: left;
     text-decoration: none;
+    margin-left: 0.4rem;
 }
 h1 a span{
     background: linear-gradient(90deg,rgba(255, 43, 166, 1) 10%, rgba(32, 227, 255, 1) 35%, rgba(182, 255, 59, 1) 100%);
@@ -56,11 +61,15 @@ h1 a span{
 
 /* Event principal */
 .principal-event{
-    background: #131313;
-    position: flex;
+    background: linear-gradient(0deg,rgb(85, 117, 119) 0%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
     padding: 2rem;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 94vh;
 }
+
 .principal-event h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
@@ -70,4 +79,119 @@ h1 a span{
     background: linear-gradient(90deg,rgba(255, 43, 166, 1) 10%, rgba(32, 227, 255, 1) 35%, rgba(182, 255, 59, 1) 100%);
     color: transparent;
     background-clip: text;
+}
+.principal-event-text{
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    margin: 1rem;
+}
+.principal-event-text h2{
+    margin: 0.5rem;
+}
+.principal-event-text h3{
+    margin: 0.7rem;
+    margin-bottom: 2rem;
+}
+.principal-event-text a{
+    text-decoration: none;
+    background: #922f82;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.7rem;
+    margin: 0.3rem;
+    border-radius: 1rem;
+}
+.principal-event-text a + a{
+    background: #40882e;
+}
+.principal-event-text a:hover{
+    background: #ce40b6;
+    padding: 1rem;
+    border-radius: 1.3rem;
+}
+.principal-event-text a + a:hover{
+    background: #40ce53;
+}
+.principal-event-text p{
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 0.7rem;
+}
+.principal-event-text p ~ p{
+    font-size: 1rem;
+    margin-top: 2.3rem;
+}
+.principal-event-text ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+.principal-event-text ul li{
+    padding: 0.5rem;
+    margin: 0.2rem;
+    font-style: oblique;
+    background-color: #21627c;
+    border-radius: 1rem;
+}
+.principal-event-text ul li:hover{
+    background-color: #2ea3dc;
+}
+.principal-event-image {
+    max-width: 30%;
+    height: auto;
+}
+
+.principal-event-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+/* Apartat últims llançaments */ 
+.lastest-releases{
+    background: linear-gradient(0deg,rgb(163, 29, 134) 0%, rgba(0, 0, 0, 1) 100%);
+    padding: 2rem;
+    height: 100vh;
+}
+.lastest-releases h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+.lastest-releases-articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.lastest-releases-articles article{
+    background-color: #161616;
+    border-radius: 1rem;
+    width: 15%;
+    height: 40vh;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    text-align: justify;
+    text-decoration: none;
+}
+.lastest-releases-eacharticles img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.lastest-releases-eacharticles p{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.lastest-releases-eacharticles a{
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
 }
