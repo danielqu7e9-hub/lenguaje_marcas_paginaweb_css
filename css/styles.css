@@ -31,6 +31,7 @@ header nav ul li{
     list-style-type: none;
     border-radius: 0.4rem;
     transition: background-color 0.3s;
+    transition: box-shadow 0.3s;
 }
 header nav ul li a{
     text-decoration: none;
@@ -110,16 +111,15 @@ h1 a span{
     padding: 0.7rem;
     margin: 0.3rem;
     border-radius: 1rem;
+    transition: background-color 0.4s;
 }
 .principal-event-text a + a{
     background: #40882e;
 }
 .principal-event-text a:hover{
-    transition: background-color 0.4s;
     background: #ce40b6;
 }
 .principal-event-text a + a:hover{
-    transition: background-color 0.4s;
     background: #40ce53;
 }
 .principal-event-text p{
@@ -143,9 +143,9 @@ h1 a span{
     font-style: oblique;
     background-color: #21627c;
     border-radius: 1rem;
+    transition: background-color 0.5s;
 }
 .principal-event-text ul li:hover{
-    transition: background-color 0.5s;
     background-color: #2ea3dc;
 }
 .principal-event-image {
@@ -189,8 +189,10 @@ h1 a span{
     text-align: justify;
     text-decoration: none;
 }
-.lastest-releases-eacharticles:hover{
+.lastest-releases-eacharticles{
     transition: box-shadow 1s;
+}
+.lastest-releases-eacharticles:hover{
     box-shadow: #161616 0rem 0rem 2rem;
 }
 .lastest-releases-eacharticles img{
@@ -210,9 +212,9 @@ h1 a span{
     padding: 0.3rem;
     border-radius: 0.5rem;
     border: 1px solid white;
+    transition: box-shadow 0.5s;
 }
 .lastest-releases-eacharticles a:hover{
-    transition: box-shadow 0.5s;
     box-shadow: #ffffff 0px 0px 0.5rem;
 }
 
@@ -236,6 +238,7 @@ h1 a span{
     min-height: 60vh;
 }
 .featured-artists-eacharticles{
+    transition: box-shadow 1s;
     background-color: #161616;
     display: flex;
     flex: wrap;
@@ -246,6 +249,9 @@ h1 a span{
     margin: 1rem;
     color: white;
     text-align: justify;
+}
+.featured-artists-eacharticles:hover{
+    box-shadow: #161616 0rem 0rem 2rem;
 }
 .featured-artists-eacharticles img{
     width: auto;
