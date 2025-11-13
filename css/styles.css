@@ -30,22 +30,31 @@ header nav ul li{
     display: inline-block;
     list-style-type: none;
     border-radius: 0.4rem;
+    transition: background-color 0.3s;
 }
 header nav ul li a{
     text-decoration: none;
     color: white;
 }
 header nav ul li:hover{
+    box-shadow: #234297 0px 0px 0.3rem;
     background-color: #234297;
 }
 header nav ul li + li:hover{
+    box-shadow: #842397 0px 0px 0.3rem;
     background-color: #842397;
 }
 header nav ul li + li + li:hover{
+    box-shadow: #974823 0px 0px 0.3rem;
     background-color: #974823;
 }
 header nav ul li + li + li + li:hover{
+    box-shadow: #23974a 0px 0px 0.3rem;
+    border:#23974a 1px solid;
     background-color: #23974a;
+}
+header nav ul li + li + li + li{
+    border: white 1px solid;
 }
 h1 a{
     color: #ffffff;
@@ -106,11 +115,11 @@ h1 a span{
     background: #40882e;
 }
 .principal-event-text a:hover{
+    transition: background-color 0.4s;
     background: #ce40b6;
-    padding: 1rem;
-    border-radius: 1.3rem;
 }
 .principal-event-text a + a:hover{
+    transition: background-color 0.4s;
     background: #40ce53;
 }
 .principal-event-text p{
@@ -136,6 +145,7 @@ h1 a span{
     border-radius: 1rem;
 }
 .principal-event-text ul li:hover{
+    transition: background-color 0.5s;
     background-color: #2ea3dc;
 }
 .principal-event-image {
@@ -164,34 +174,97 @@ h1 a span{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    vertical-align: center;
     padding: 1rem;
 }
 .lastest-releases-articles article{
     background-color: #161616;
     border-radius: 1rem;
+    min-width: 10vh;
     width: 15%;
-    height: 40vh;
+    max-height: 45vh;
     padding: 1rem;
     margin: 1rem;
     color: white;
     text-align: justify;
     text-decoration: none;
 }
+.lastest-releases-eacharticles:hover{
+    transition: box-shadow 1s;
+    box-shadow: #161616 0rem 0rem 2rem;
+}
 .lastest-releases-eacharticles img{
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 .lastest-releases-eacharticles p{
     font-size: 0.8rem;
     font-style: italic;
+    margin-bottom: 0.6rem;
 }
 .lastest-releases-eacharticles a{
+    display: inline-block;
     text-decoration: none;
     color: white;
-    margin-top: 1rem;
     padding: 0.3rem;
     border-radius: 0.5rem;
     border: 1px solid white;
+}
+.lastest-releases-eacharticles a:hover{
+    transition: box-shadow 0.5s;
+    box-shadow: #ffffff 0px 0px 0.5rem;
+}
+
+/* Artistes destacats */
+.featured-artists{
+    background: linear-gradient(0deg,rgb(145, 5, 5) 0%, rgba(0, 0, 0, 1) 100%);
+    padding: 2rem;
+    height: 70vh;
+}
+.featured-artists h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+.featured-artists-articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 60vh;
+}
+.featured-artists-eacharticles{
+    background-color: #161616;
+    display: flex;
+    flex: wrap;
+    border-radius: 1rem;
+    width: 20%;
+    height: 8rem;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    text-align: justify;
+}
+.featured-artists-eacharticles img{
+    width: auto;
+    height: 100%;
+    border-radius: 0.5rem;
+    margin-right: 0.8rem;
+}
+.featured-artists-eacharticles p{
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 0.6rem;
+}
+.featured-artists-eacharticles p ~ p{
+    font-size: 1.3rem;
+    font-style: normal;
+    margin-bottom: 0.6rem;
+}
+.artist-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
