@@ -271,6 +271,85 @@ h1 a span{
 }
 .artist-info{
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center;
+}
+
+/** Secció (main - aside) **/
+.section-main-aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(0deg,rgb(155, 85, 4) 0%, rgba(0, 0, 0, 1) 100%);
+    width: 100%;
+    height: 90vh;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/**  Secció de main **/
+main h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+.main-articles {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 2rem;
+}
+.main-eacharticle {
+    background-color: #161616;
+    border-radius: 1rem;
+    min-width: 10vh;
+    width: 25%;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    transition: all 2s;
+}
+.main-eacharticle:hover{
+    transition: all 1s;
+    box-shadow: #ffffff 0rem 0rem 4rem;
+}
+.main-eacharticle span{
+    font-weight: bold;
+}
+.main-eacharticle h3{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.main-eacharticle p{
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+.main-eacharticle img {
+    width: 100%;
+    aspect-ratio: 20 / 17; 
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+.main-articles ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 0.5rem;
+    gap: 0.8rem;
+}
+.main-articles ul li{
+    padding: 0.4rem;
+    border: white 1px solid;
+    border-radius: 1rem;
+    transition: box-shadow 1s;
+}
+.main-articles ul li:hover{
+    transition: box-shadow 0.3s;
+    box-shadow: #ffffff 0px 0px 0.4rem;
 }
