@@ -9,12 +9,13 @@
   scrollbar-width: thin;
 }
 body{
-    background: linear-gradient(54deg,#b42a7b 10%, #2dacc0 35%, #63832d 100%, #beb13b 10%);
+    background-color: #161616;
 }
 
 /* Configuració header */
 header{
     position: sticky;
+    z-index: 1000;
     top: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #0a0a0a;
@@ -71,7 +72,7 @@ h1 a span{
 
 /* Event principal */
 .principal-event{
-    /** background: linear-gradient(0deg,rgb(85, 117, 119) 0%, rgba(0, 0, 0, 1) 100%); **/
+    background: linear-gradient(0deg,rgb(85, 117, 119) 0%, rgba(0, 0, 0, 1) 100%);
     display: flex;
     padding: 2rem;
     flex-direction: row;
@@ -161,7 +162,7 @@ h1 a span{
 
 /* Apartat últims llançaments */ 
 .lastest-releases{
-    /** background: linear-gradient(0deg,#a31d86 0%, #000000 100%); **/
+    background: linear-gradient(0deg,#a31d86 0%, #000000 100%);
     padding: 2rem;
     height: 100vh;
 }
@@ -190,9 +191,10 @@ h1 a span{
     text-decoration: none;
 }
 .lastest-releases-eacharticles{
-    transition: box-shadow 1s;
+    transition: all 1s;
 }
 .lastest-releases-eacharticles:hover{
+    transform: translateY(-5px);
     box-shadow: #161616 0rem 0rem 2rem;
 }
 .lastest-releases-eacharticles img{
@@ -212,15 +214,16 @@ h1 a span{
     padding: 0.3rem;
     border-radius: 0.5rem;
     border: 1px solid white;
-    transition: box-shadow 0.5s;
+    transition: all 0.5s;
 }
 .lastest-releases-eacharticles a:hover{
+    transform: translateY(-5px);
     box-shadow: #ffffff 0px 0px 0.5rem;
 }
 
 /* Artistes destacats */
 .featured-artists{
-    /** background: linear-gradient(0deg,#910505 0%, #000000 100%); **/
+    background: linear-gradient(0deg,#910505 0%, #000000 100%);
     padding: 2rem;
     height: 70vh;
 }
@@ -238,7 +241,7 @@ h1 a span{
     min-height: 60vh;
 }
 .featured-artists-eacharticles{
-    transition: box-shadow 1s;
+    transition: all 1s;
     background-color: #161616;
     display: flex;
     flex: wrap;
@@ -251,6 +254,7 @@ h1 a span{
     text-align: justify;
 }
 .featured-artists-eacharticles:hover{
+    transform: translateY(-5px);
     box-shadow: #161616 0rem 0rem 2rem;
 }
 .featured-artists-eacharticles img{
@@ -281,7 +285,7 @@ h1 a span{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /** background: linear-gradient(0deg,#9b5504 0%, #000000 100%); **/
+    background: linear-gradient(0deg,#9b5504 0%, #000000 100%);
     width: 100%;
     height: 100vh;
     padding: 2rem;
@@ -319,6 +323,7 @@ main h2{
 }
 .main-eacharticle:hover{
     transition: all 1s;
+    transform: translateY(-5px);
     box-shadow: #707070 0rem 0rem 4rem;
 }
 .main-eacharticle span{
@@ -355,9 +360,10 @@ main h2{
     padding: 0.4rem;
     border: white 1px solid;
     border-radius: 1rem;
-    transition: box-shadow 1s;
+    transition: all 1s;
 }
 .main-articles ul li:hover{
+    transform: translateY(-5px);
     transition: box-shadow 0.3s;
     box-shadow: #ffffff 0px 0px 0.4rem;
 }
@@ -367,9 +373,8 @@ aside {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width:17%;
-    gap: 2rem;
+    gap: 3rem;
     color: white;
 }
 .aside-articles{
@@ -377,7 +382,7 @@ aside {
     border-radius: 1rem;
     padding: 1rem;
     text-align: center;
-    transition: box-shadow 1s;
+    transition: all 1s;
 }
 .aside-articles h3{
     font-weight: bold;
@@ -394,6 +399,7 @@ aside {
     border-radius: 0.5rem;
 }
 .aside-articles:hover{
+    transform: translateY(-5px);
     box-shadow: #474747 0rem 0rem 2rem;
 }
 .aside-articles a{
@@ -420,7 +426,7 @@ aside {
 
 /** Secció albums més escoltats **/
 .most-listened-albums{
-    /** background: linear-gradient(0deg,#4b134f 0%, #000000 100%); **/
+    background: linear-gradient(0deg,#4b134f 0%, #000000 100%);
     padding: 2rem;
     height: 40vh;
 }
@@ -435,7 +441,7 @@ aside {
 }
 .most-listened-albums-list {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 1rem;
+    padding: 6rem;
     color: white;
     font-size: 1.2rem;
     column-count: 2;
@@ -468,33 +474,87 @@ footer{
     color: gray;
 }
 
-/**? Pàgina de festivals **/
+/** Festivals page **/
+.festival-page {
+    background: linear-gradient(48deg,#ff2ba6 10%, #20e3ff 35%, #b6ff3b 100%);
+}
 .pag-festivals {
-    padding: 2rem;
+    width: 100%;
+    height: auto;
 }
 .pag-festivals h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    font-size: 3rem;
+    color: rgb(65, 65, 65);
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
 }
-.pag-festivals p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #dcdcdc;
-    font-size: 1.2rem;
+.festivals-titleSearch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-.pag-festivals input{
-    width: 30rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+.pag-festivals input[type="search"] {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 2rem;
     border: none;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    justify-content: right;
 }
 .festival-main-articles {
     display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    gap: 2rem;
-    margin-top: 4rem;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+.festivals-main-eacharticle {
+    background-color: #161616;
+    border-radius: 1rem;
+    width: 22rem;
     height: auto;
-    justify-content: space-around;
+    color: white;
+    transition: all 0.4s ease;
+    box-shadow: 5px 5px 15px #000000;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+.festivals-main-eacharticle:hover {
+    border: #ffffff 1px solid;
+    transform: translateY(-5px);
+    box-shadow: 0 0 3rem #000000;
+}
+.festivals-main-eacharticle img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+.festivals-main-eacharticle h3 {
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+.festivals-main-eacharticle p {
+    margin: 0.4rem 1rem;
+    line-height: 1.3rem;
+}
+.festivals-main-eacharticle ul {
+    margin: 1rem;
+    padding-left: 1.2rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.festivals-main-eacharticle ul li {
+    background: #292929;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    box-shadow: inset 0 0 0.5rem #000;
 }
