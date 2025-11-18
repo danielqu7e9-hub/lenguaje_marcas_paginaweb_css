@@ -9,7 +9,7 @@
   scrollbar-width: thin;
 }
 body{
-    background-color: #161616;
+    background: linear-gradient(54deg,#b42a7b 10%, #2dacc0 35%, #63832d 100%, #beb13b 10%);
 }
 
 /* Configuració header */
@@ -71,7 +71,7 @@ h1 a span{
 
 /* Event principal */
 .principal-event{
-    background: linear-gradient(0deg,rgb(85, 117, 119) 0%, rgba(0, 0, 0, 1) 100%);
+    /** background: linear-gradient(0deg,rgb(85, 117, 119) 0%, rgba(0, 0, 0, 1) 100%); **/
     display: flex;
     padding: 2rem;
     flex-direction: row;
@@ -161,7 +161,7 @@ h1 a span{
 
 /* Apartat últims llançaments */ 
 .lastest-releases{
-    background: linear-gradient(0deg,#a31d86 0%, #000000 100%);
+    /** background: linear-gradient(0deg,#a31d86 0%, #000000 100%); **/
     padding: 2rem;
     height: 100vh;
 }
@@ -220,7 +220,7 @@ h1 a span{
 
 /* Artistes destacats */
 .featured-artists{
-    background: linear-gradient(0deg,#910505 0%, #000000 100%);
+    /** background: linear-gradient(0deg,#910505 0%, #000000 100%); **/
     padding: 2rem;
     height: 70vh;
 }
@@ -281,7 +281,7 @@ h1 a span{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: linear-gradient(0deg,#9b5504 0%, #000000 100%);
+    /** background: linear-gradient(0deg,#9b5504 0%, #000000 100%); **/
     width: 100%;
     height: 100vh;
     padding: 2rem;
@@ -367,8 +367,9 @@ aside {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width:17%;
-    gap: 3rem;
+    gap: 2rem;
     color: white;
 }
 .aside-articles{
@@ -419,7 +420,7 @@ aside {
 
 /** Secció albums més escoltats **/
 .most-listened-albums{
-    background: linear-gradient(0deg,#4b134f 0%, #000000 100%);
+    /** background: linear-gradient(0deg,#4b134f 0%, #000000 100%); **/
     padding: 2rem;
     height: 40vh;
 }
@@ -434,7 +435,7 @@ aside {
 }
 .most-listened-albums-list {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 6rem;
+    padding: 1rem;
     color: white;
     font-size: 1.2rem;
     column-count: 2;
@@ -465,4 +466,35 @@ footer{
 .footerInfo p{
     font-size: 0.8rem;
     color: gray;
+}
+
+/**? Pàgina de festivals **/
+.pag-festivals {
+    padding: 2rem;
+}
+.pag-festivals h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+.pag-festivals p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #dcdcdc;
+    font-size: 1.2rem;
+}
+.pag-festivals input{
+    width: 30rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+.festival-main-articles {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 2rem;
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
 }
