@@ -289,12 +289,13 @@ h1 a span{
     width: 100%;
     height: 100vh;
     padding: 2rem;
-    gap: 2rem;
+    gap: 0.2rem;
 }
 
 /**  Secció de main **/
 main {
     width: 70%;
+    height: auto;
 }
 main h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -374,7 +375,7 @@ aside {
     display: flex;
     flex-direction: column;
     width:17%;
-    gap: 3rem;
+    gap: 1rem;
     color: white;
 }
 .aside-articles{
@@ -429,6 +430,7 @@ aside {
     background: linear-gradient(0deg,#4b134f 0%, #000000 100%);
     padding: 2rem;
     height: 40vh;
+    overflow: hidden;
 }
 .most-listened-albums h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -441,7 +443,7 @@ aside {
 }
 .most-listened-albums-list {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 6rem;
+    padding: 1rem;
     color: white;
     font-size: 1.2rem;
     column-count: 2;
@@ -449,7 +451,7 @@ aside {
     line-height: 3rem;
 }
 
-/* Footer */
+/** Footer config **/
 footer{
     background: linear-gradient(0deg,#02001d 0%, #000000 100%);
     padding: 1rem;
@@ -457,8 +459,8 @@ footer{
 }
 footer p {
     margin-top: 1rem;
-
 }
+
 .footerInfo{
     display: flex;
     flex-direction: row;
@@ -520,17 +522,20 @@ footer p {
     gap: 3rem;
     padding: 2rem;
 }
+.festival-main-articles a {
+    text-decoration: none;
+}
 .festivals-main-eacharticle {
     background-color: #161616;
     border-radius: 1rem;
     width: 22rem;
     height: auto;
+    min-height: 38rem;
     color: white;
     transition: all 0.4s ease;
     box-shadow: 5px 5px 15px #000000;
     overflow: hidden;
     padding-bottom: 1rem;
-    text-decoration: none;
 }
 .festivals-main-eacharticle:hover {
     border: #ffffff 1px solid;
@@ -552,12 +557,15 @@ footer p {
     margin: 0.4rem 1rem;
     line-height: 1.3rem;
 }
+.festivals-main-eacharticle p span{
+    font-weight: bold;
+}
 .festivals-main-eacharticle ul {
-    margin: 1rem;
-    padding-left: 1.2rem;
+    margin: 0.6rem;
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    list-style: none;
 }
 .festivals-main-eacharticle ul li {
     background: #292929;
@@ -565,4 +573,5 @@ footer p {
     border-radius: 0.5rem;
     font-size: 0.8rem;
     box-shadow: inset 0 0 0.5rem #000;
+    
 }
