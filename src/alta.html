@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <title>SoundTecITB</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="alta-page">
+
+    <header>
+        <h1><a href="../src/index.html">Sound<span>TecITB</span></a></h1>
+        <nav>
+            <ul>
+                <li><a href="../src/index.html">Home</a></li>
+                <li><a href="../src/festivals.html">Festivals</a></li>
+                <li><a href="../src/alta.html">Alta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="alta-form">
+        <form action="../src/processing.html" method="get">
+            <h2>Formulari d'alta</h2>
+
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required placeholder=" El teu nom">
+
+                <label for="cognom">Cognom</label>
+                <input type="text" id="cognom" name="cognom" placeholder=" El teu cognom">
+
+                <label for="email">Correu electronic</label>
+                <input type="email" id="email" name="email" required placeholder=" example@gmail.com">
+
+                <label for="telefon">Telefon</label>
+                <input type="number" id="telefon" name="telefon" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder=" El teu nº telefonic">
+
+                <label for="gender">Selecciona el teu genere</label>
+                <div class="seleccionarGenere">
+                    <input type="radio" id="home" name="gender" value="Home">
+                    <label for="Home">Home</label>
+                    <input type="radio" id="dona" name="gender" value="Dona">
+                    <label for="Dona">Dona</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferències musicals</legend>
+
+                <label for="estil">Escull el teu estil de música preferit</label>
+                <select id="estil" name="estil" required>
+                    <option value="">— Selecciona un estil —</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="rap">Rap / Hip-hop</option>
+                    <option value="classica">Música clàssica</option>
+                    <option value="electro">Electrònica</option>
+                    <option value="tradicional">Tradicional</option>
+                    <option value="jpop">J-Pop</option>
+                    <option value="kpop">K-Pop</option>
+                    <option value="altres">Altres</option>
+                </select>
+
+                <label for="artista">Artista o grup favorit</label>
+                <input type="text" id="artista" name="artista" placeholder=" Escriu el teu artista preferit">
+
+                <label for="hores">Quantes hores escoltes música al dia?</label>
+                <input type="number" id="hores" name="hores" min="0" max="24" placeholder=" Hores">
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer>
+
+        <div class="footerInfo">
+            <address>SoundTecITB · Carrer de la Música, 123 · Barcelona, España</address>
+
+            <ul>
+                <li><a href="https://www.instagram.com/soundtecitb" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@soundtecitb" target="_blank">TikTok</a></li>
+                <li><a href="https://x.com/soundtecitb" target="_blank">X</a></li>
+            </ul>
+        </div>
+
+        <p>&copy; 2025 SoundTecITB. Todos los derechos reservats.</p>
+    </footer>
+
+</body>
+
+</html>
